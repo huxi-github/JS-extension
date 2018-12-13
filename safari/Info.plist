@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>huxi</string>
+	<key>Builder Version</key>
+	<string>13606.2.11</string>
+	<key>CFBundleDisplayName</key>
+	<string>JS extension</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.extension</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Bars</key>
+		<array>
+			<dict>
+				<key>Filename</key>
+				<string>toolbar.html</string>
+				<key>Identifier</key>
+				<string>toobal</string>
+				<key>Label</key>
+				<string>my toobal</string>
+			</dict>
+		</array>
+		<key>Database Quota</key>
+		<integer>5242880</integer>
+		<key>Popovers</key>
+		<array>
+			<dict>
+				<key>Filename</key>
+				<string>popover.html</string>
+				<key>Height</key>
+				<integer>500</integer>
+				<key>Identifier</key>
+				<string>popoverID</string>
+				<key>Width</key>
+				<integer>400</integer>
+			</dict>
+		</array>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>mianbutonCommand</string>
+				<key>Identifier</key>
+				<string>mainbuton</string>
+				<key>Image</key>
+				<string>Icon.png</string>
+				<key>Include By Default</key>
+				<true/>
+				<key>Label</key>
+				<string>test</string>
+				<key>Palette Label</key>
+				<string>test</string>
+				<key>Popover</key>
+				<string>popoverID</string>
+				<key>Tool Tip</key>
+				<string>提示</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>encryptmanager.js</string>
+				<string>plugin.js</string>
+				<string>globalfuncs.js</string>
+				<string>script2.js</string>
+			</array>
+			<key>Start</key>
+			<array>
+				<string>script2.js</string>
+				<string>plugin.js</string>
+				<string>globalfuncs.js</string>
+				<string>encryptmanager.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>style.css</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>网页嵌入内容</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>https://www.baidu.com</string>
+</dict>
+</plist>
